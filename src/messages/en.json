@@ -1,0 +1,8 @@
+import HomePage from './home.json' assert { type: 'json' };
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "Footer": {}
+}

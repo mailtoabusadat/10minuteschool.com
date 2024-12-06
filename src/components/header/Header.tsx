@@ -6,6 +6,7 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import HorizontalMenu from "./HorizontalMenu";
 import VerticalMenu from "./VerticalMenu";
+import LocaleSwitcher from "@/components/others/LocaleSwitcher";
 
 const Header = () => {
   const [drawer, setDrawer] = useState(false);
@@ -35,15 +36,15 @@ const Header = () => {
                   sx={{ display: "flex", maxWidth: "150px", minWidth: "120px" }}
                 >
                   <Image
-                    src="/image/logo-horizontal.png"
+                    src="/images/logo-horizontal.png"
                     alt="logo"
-                    width={449}
-                    height={102}
+                    width={3263}
+                    height={911}
                   />
                 </Box>
               </Link>
               <HorizontalMenu />
-
+              <LocaleSwitcher />
               <IconButton
                 aria-label="delete"
                 onClick={() => setDrawer(true)}
