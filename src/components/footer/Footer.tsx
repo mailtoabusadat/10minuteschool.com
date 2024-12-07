@@ -50,7 +50,7 @@ const Footer = () => {
                 <Box sx={{ maxWidth: "156px" }}>
                   <Link href="/">
                     <Image
-                      src="/images/footer/google-play-icon.jpg"
+                      src="/images/google-play-icon.jpg"
                       alt="logo"
                       width={156}
                       height={49}
@@ -60,7 +60,7 @@ const Footer = () => {
                 <Box sx={{ maxWidth: "156px" }}>
                   <Link href="/">
                     <Image
-                      src="/images/footer/ios-store-icon.jpg"
+                      src="/images/ios-store-icon.jpg"
                       alt="logo"
                       width={156}
                       height={49}

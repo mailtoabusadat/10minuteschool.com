@@ -8,39 +8,21 @@ type MenuItem = {
 const menuItems: MenuItem[] = [
   {
     id: "1",
-    label: "Country",
+    label: "English Center",
     subItem: [
       {
         id: "1_1",
-        label: "Available Countries",
-        url: "available-countries",
+        label: "IELTS Program",
+        url: "/product/ielts-live-batch",
         target: "_self",
       },
       {
         id: "1_2",
-        label: "Country Borders",
-        url: "country-borders",
+        label: "All Programs",
+        url: "/product/ielts-live-batch",
         target: "_self",
       },
     ],
   },
-  // {
-  //   id: "2",
-  //   label: "10 Minute School",
-  //   subItem: [
-  //     {
-  //       id: "2_1",
-  //       label: "Next 10 Minute School",
-  //       url: "rul2_1",
-  //       target: "_self",
-  //     },
-  //     {
-  //       id: "2_1",
-  //       label: "Worldwide 10 Minute School",
-  //       url: "rul2_1",
-  //       target: "_self",
-  //     },
-  //   ],
-  // },
 ];
 export default menuItems;

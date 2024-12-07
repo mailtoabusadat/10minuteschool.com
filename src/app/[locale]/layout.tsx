@@ -12,6 +12,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import NextTopLoader from "nextjs-toploader";
+import "swiper/css";
 export const metadata = RootLayoutMetadata;
 
 const RootLayout = async ({

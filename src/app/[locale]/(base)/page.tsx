@@ -1,6 +1,7 @@
 import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
 const HomePage = async ({
   params,
@@ -11,6 +12,7 @@ const HomePage = async ({
   const t = await getTranslations("HomePage");
   return (
     <>
+      {redirect("/product/ielts-live-batch")}
       {/* <img src="/file.svg" /> */}
       <Image
         src="/images/logo-horizontal.png"
