@@ -99,7 +99,7 @@ let theme = createTheme({
     //experimental myself
     white: {
       light: "#ffffff",
-      main: "#efefef",
+      main: "#a3a3a3",
       dark: "#dcdcdc",
       contrastText: "#000",
     },

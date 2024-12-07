@@ -32,7 +32,7 @@ const LoadingPage = () => {
       >
         <Box className="loading-container" sx={{ margin: "auto" }}>
           <Box className="loading"></Box>
-          <Box id="loading-text" sx={{ color: "warning.main" }}>
+          <Box id="loading-text" sx={{ color: "primary.main" }}>
             loading...
           </Box>
         </Box>

@@ -7,106 +7,206 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import dayjs from "dayjs";
+import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import { MdArrowForwardIos } from "react-icons/md";
+import { FaYoutube } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { MdArrowForwardIos, MdFacebook } from "react-icons/md";
+import { RiInstagramLine } from "react-icons/ri";
+type Footer = {
+  col2: {
+    items: {
+      label: string;
+      url: string;
+    }[];
+  };
+};
 const Footer = () => {
+  const t = useTranslations("Footer");
+  const messages = useMessages();
+  const footer: Footer = messages.Footer as unknown as Footer;
+
   return (
     <Box sx={{ mt: 8 }}>
-      <Box sx={{ py: 3, bgcolor: "primary.50" }}>
+      <Box sx={{ py: 3 }}>
         <Container maxWidth="lg">
           <Grid2 container columnSpacing={{ xs: 2, md: 3, lg: 4 }}>
             <Grid2 size={{ xs: 12, sm: 4 }} sx={{ my: 2 }}>
-              <Box sx={{ maxWidth: "150px", mb: 2, mx: "auto" }}>
+              <Box sx={{ maxWidth: "150px", mb: 2 }}>
                 <Link href="/">
                   <Image
-                    src="/image/logo-horizontal.png"
+                    src="/images/logo-horizontal.png"
                     alt="logo"
-                    width={449}
-                    height={102}
+                    width={3263}
+                    height={911}
                   />
                 </Link>
               </Box>
-              <Typography sx={{ textAlign: "justify" }}>
-                The goal of this{" "}
-                <Typography component="span" sx={{ color: "text.secondary" }}>
-                  {" "}
-                  &quot;10 Minute School&quot;{" "}
-                </Typography>
-                web site is to provide a list of 10 Minute School of different
-                countries, states, and regions according to the type and taking
-                into account the relevant time zone.
-              </Typography>
               <Typography sx={{ color: "text.secondary", mt: 1 }}>
-                Happy 10 Minute School!
+                {t("col1.title")}
               </Typography>
+              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mt: 2 }}>
+                <Box sx={{ maxWidth: "156px" }}>
+                  <Link href="/">
+                    <Image
+                      src="/images/footer/google-play-icon.jpg"
+                      alt="logo"
+                      width={156}
+                      height={49}
+                    />
+                  </Link>
+                </Box>
+                <Box sx={{ maxWidth: "156px" }}>
+                  <Link href="/">
+                    <Image
+                      src="/images/footer/ios-store-icon.jpg"
+                      alt="logo"
+                      width={156}
+                      height={49}
+                    />
+                  </Link>
+                </Box>
+              </Box>
+            </Grid2>
+            <Grid2 size={{ xs: 12, sm: 4 }} sx={{ my: 2 }}>
+              <Grid2 container columnSpacing={{ xs: 2, md: 3, lg: 4 }}>
+                <Grid2 size={{ xs: 12, sm: 6 }}>
+                  <Typography variant="h5" gutterBottom>
+                    {t("col2.title")}
+                  </Typography>
+                  <List
+                    sx={{
+                      li: {
+                        my: 1,
+                        a: {
+                          display: "flex",
+                          flexWrap: "wrap",
+                          alignItems: "center",
+                          columnGap: 1,
+                        },
+                      },
+                    }}
+                  >
+                    {footer?.col2?.items.map((item, index) => (
+                      <div key={index}>{item.label}</div>
+                    ))}
+
+                    <ListItem disablePadding>
+                      <Link href="" target="_blank">
+                        <ListItemText primary="Holiday (Wikipedia)" />
+                      </Link>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <Link href="">
+                        <MdArrowForwardIos />
+                        <ListItemText primary="Definitions of" />
+                      </Link>
+                    </ListItem>
+                  </List>
+                </Grid2>
+                <Grid2 size={{ xs: 12, sm: 6 }}>
+                  <Typography variant="h5" gutterBottom>
+                    {t("col3.title")}
+                  </Typography>
+                  <List
+                    sx={{
+                      li: {
+                        my: 1,
+                        a: {
+                          display: "flex",
+                          flexWrap: "wrap",
+                          alignItems: "center",
+                          columnGap: 1,
+                        },
+                      },
+                    }}
+                  >
+                    <ListItem disablePadding>
+                      <Link href="" target="_blank">
+                        <ListItemText primary="Holiday (Wikipedia)" />
+                      </Link>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <Link href="">
+                        <MdArrowForwardIos />
+                        <ListItemText primary="Definitions of" />
+                      </Link>
+                    </ListItem>
+                  </List>
+                </Grid2>
+              </Grid2>
             </Grid2>
             <Grid2 size={{ xs: 12, sm: 4 }} sx={{ my: 2 }}>
               <Typography variant="h5" gutterBottom>
-                Useful Links
+                {t("col4.title")}
               </Typography>
               <List
                 sx={{
-                  "li a": {
-                    display: "flex",
-                    flexWrap: "wrap",
-                    alignItems: "center",
-                    columnGap: 1,
+                  li: {
+                    my: 1,
+                    a: {
+                      display: "flex",
+                      flexWrap: "wrap",
+                      alignItems: "center",
+                      columnGap: 1,
+                    },
                   },
                 }}
               >
                 <ListItem disablePadding>
-                  <Link href="" target="_blank">
-                    <MdArrowForwardIos />
-                    <ListItemText primary="Holiday (Wikipedia)" />
-                  </Link>
+                  <Link href="/">{t("col4.callUs.label")}</Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="">
-                    <MdArrowForwardIos />
-                    <ListItemText primary="Definitions of" />
-                  </Link>
+                  <Link href="/">{t("col4.whatsapp.label")}</Link>
+                </ListItem>
+                <ListItem disablePadding>
+                  <Link href="/">{t("col4.outsideBD.label")}</Link>
+                </ListItem>
+                <ListItem disablePadding>
+                  <Link href="/">{t("col4.emailUs.label")}</Link>
                 </ListItem>
               </List>
-            </Grid2>
-            <Grid2 size={{ xs: 12, sm: 4 }} sx={{ my: 2 }}>
-              <Typography variant="h5" gutterBottom>
-                Using The Site
-              </Typography>
               <List
                 sx={{
-                  "li a": {
-                    display: "flex",
-                    flexWrap: "wrap",
+                  mt: 3,
+                  display: "flex",
+                  flexWrap: "wrap",
+                  columnGap: 3,
+                  rowGap: 1,
+                  li: {
+                    width: "30px",
+                    height: "30px",
+                    textAlign: "center",
+                    bgcolor: "secondary.main",
+                    color: "white.main",
+                    borderRadius: "4px",
+                    justifyContent: "center",
                     alignItems: "center",
-                    columnGap: 1,
+                    a: {
+                      lineHeight: 1,
+                    },
                   },
                 }}
               >
                 <ListItem disablePadding>
-                  <Link href="/about-us">
-                    <MdArrowForwardIos />
-                    <ListItemText primary="About Us" />
+                  <Link href="/">
+                    <MdFacebook />
                   </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/terms-and-conditions">
-                    <MdArrowForwardIos />
-                    <ListItemText primary="Terms and Conditions" />
+                  <Link href="/">
+                    <RiInstagramLine />
                   </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/privacy-policy">
-                    <MdArrowForwardIos />
-                    <ListItemText primary="Privacy Policy" />
+                  <Link href="/">
+                    <FaLinkedinIn />
                   </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/contact-us">
-                    {" "}
-                    <MdArrowForwardIos />
-                    <ListItemText primary="Contact Us" />
+                  <Link href="/">
+                    <FaYoutube />
                   </Link>
                 </ListItem>
               </List>
@@ -119,7 +219,7 @@ const Footer = () => {
           <Grid2 container>
             <Grid2 size={{ xs: 12 }}>
               <Typography sx={{ textAlign: "center", color: "text.secondary" }}>
-                Copyright © {dayjs().year()} @easy | All rights reserved.
+                {t("copyright")}
               </Typography>
             </Grid2>
           </Grid2>

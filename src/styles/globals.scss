@@ -76,7 +76,7 @@ main {
 /* loading page style start */
 .loading {
   border: 2px solid transparent;
-  border-color: transparent #0d47a1 transparent #0d47a1;
+  border-color: transparent #1cab55 transparent #1cab55;
   -moz-animation: rotate-loading 1.5s linear 0s infinite normal;
   -moz-transform-origin: 50% 50%;
   -o-animation: rotate-loading 1.5s linear 0s infinite normal;
@@ -88,7 +88,7 @@ main {
 }
 
 .loading-container:hover .loading {
-  border-color: transparent #e45635 transparent #e45635;
+  border-color: transparent #1cab55 transparent #1cab55;
 }
 .loading-container:hover .loading,
 .loading-container .loading {
