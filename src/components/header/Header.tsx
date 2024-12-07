@@ -6,6 +6,7 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import HorizontalMenu from "./HorizontalMenu";
 import VerticalMenu from "./VerticalMenu";
+import LocaleSwitcher from "@/components/others/LocaleSwitcher";
 
 const Header = () => {
   const [drawer, setDrawer] = useState(false);
@@ -27,30 +28,38 @@ const Header = () => {
               disableGutters
               sx={{
                 columnGap: 5,
-                justifyContent: { xs: "space-between", md: "flex-start" },
+                justifyContent: "space-between",
               }}
             >
-              <Link href="/">
-                <Box
-                  sx={{ display: "flex", maxWidth: "150px", minWidth: "120px" }}
+              <Box sx={{ display: "flex", alignItems: "center", columnGap: 2 }}>
+                <Link href="/">
+                  <Box
+                    sx={{
+                      display: "flex",
+                      maxWidth: "150px",
+                      minWidth: "120px",
+                    }}
+                  >
+                    <Image
+                      src="/images/logo-horizontal.png"
+                      alt="logo"
+                      width={3263}
+                      height={911}
+                    />
+                  </Box>
+                </Link>
+                <HorizontalMenu />
+              </Box>
+              <Box sx={{ display: "flex", alignItems: "center", columnGap: 2 }}>
+                <LocaleSwitcher />
+                <IconButton
+                  aria-label="delete"
+                  onClick={() => setDrawer(true)}
+                  sx={{ display: { xs: "inline-flex", md: "none" } }}
                 >
-                  <Image
-                    src="/image/logo-horizontal.png"
-                    alt="logo"
-                    width={449}
-                    height={102}
-                  />
-                </Box>
-              </Link>
-              <HorizontalMenu />
-
-              <IconButton
-                aria-label="delete"
-                onClick={() => setDrawer(true)}
-                sx={{ display: { xs: "inline-flex", md: "none" } }}
-              >
-                <FaBars />
-              </IconButton>
+                  <FaBars />
+                </IconButton>
+              </Box>
             </Toolbar>
           </Container>
         </AppBar>

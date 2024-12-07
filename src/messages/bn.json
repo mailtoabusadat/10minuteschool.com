@@ -1,0 +1,102 @@
+{
+  "HomePage": {
+    "title": "Hello world! {name}--0",
+    "about": "about page"
+  },
+  "IELTSLiveBatch": {
+    "description": "Get the best IELTS preparation with direct guidance and feedback from the country's top IELTS instructors, all in one course. With this live course, learn hands-on techniques for Listening, Reading, Writing, and Speaking. Join our live batch now to achieve your desired IELTS score in just 12 weeks.",
+    "info": {
+      "courseDuration": "কোর্সের সময়সীমা: ৩ মাস",
+      "classTime": "শনি, সোম, বুধ (সন্ধ্যা ৬টা - ৭:৩০টা)",
+      "enrollment": "১০ম ব্যাচের ভর্তি চলছে",
+      "seat": "আসন বাকি: ১০০ টি",
+      "students": "১ম থেকে ৯ম ব্যাচে মোট শিক্ষার্থী সংখ্যা: ১০৩০"
+    },
+    "countDown": {
+      "title": "১০ম ব্যাচের ভর্তি শেষ হবে:"
+    }
+  },
+  "Footer": {
+    "col1": {
+      "title": "ডাউনলোড করুন আমাদের মোবাইল অ্যাপ"
+    },
+    "col2": {
+      "title": "কোম্পানি",
+      "items": [
+        {
+          "label": "ক্যারিয়ার / নিয়োগ বিজ্ঞপ্তি",
+          "url": "/"
+        },
+        {
+          "label": "শিক্ষক হিসাবে যোগ দিন",
+          "url": "/"
+        },
+        {
+          "label": "অ্যাফিলিয়েট হিসাবে যোগ দিন",
+          "url": "/"
+        },
+        {
+          "label": "প্রাইভেসি পলিসি",
+          "url": "/"
+        },
+        {
+          "label": "রিফান্ড পলিসি",
+          "url": "/"
+        },
+        {
+          "label": "ব্যবহারকারীর শর্তাবলি",
+          "url": "/"
+        }
+      ]
+    },
+    "col3": {
+      "title": "অন্যান্য",
+      "items": [
+        {
+          "label": "ব্লগ",
+          "url": "/"
+        },
+        {
+          "label": "বুক স্টোর",
+          "url": "/"
+        },
+        {
+          "label": "ফ্রি নোটস ও গাইড",
+          "url": "/"
+        },
+        {
+          "label": "চাকরি প্রস্তুতি কোর্সসমূহ",
+          "url": "/"
+        },
+        {
+          "label": "সার্টিফিকেট ভেরিফাই করুন",
+          "url": "/"
+        },
+        {
+          "label": "ফ্রি ডাউনলোড",
+          "url": "/"
+        }
+      ]
+    },
+    "col4": {
+      "title": "আমাদের যোগাযোগ মাধ্যম",
+      "callUs": {
+        "label": "কল করুন: 16910 (24x7)",
+        "url": "/"
+      },
+      "whatsapp": {
+        "label": "হোয়াটসঅ্যাপ: +8801896016252(24x7)",
+        "url": "/"
+      },
+      "outsideBD": {
+        "label": "দেশের বাহির থেকে: +880 9610916910",
+        "url": "/"
+      },
+      "emailUs": {
+        "label": "ইমেইল: support@10minuteschool.com",
+        "url": "/"
+      }
+    },
+    "copyright": "স্বত্ব © ২০১৫ - ২০২৪ টেন মিনিট স্কুল কর্তৃক সর্বস্বত্ব সংরক্ষিত"
+  }
+}

@@ -2,45 +2,50 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import localFont from "next/font/local";
 
-const roboto = localFont({
+const inter = localFont({
   src: [
     {
-      path: "../public/fonts/roboto/Roboto-Regular.ttf",
+      path: "../public/fonts/inter/Inter_24pt-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../public/fonts/roboto/Roboto-Medium.ttf",
+      path: "../public/fonts/inter/Inter_24pt-Medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../public/fonts/roboto/Roboto-Bold.ttf",
+      path: "../public/fonts/inter/Inter_24pt-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/inter/Inter_24pt-Bold.ttf",
       weight: "700",
       style: "normal",
     },
   ],
 });
 
-const poppins = localFont({
+const notoSansBengali = localFont({
   src: [
     {
-      path: "../public/fonts/poppins/Poppins-Regular.ttf",
+      path: "../public/fonts/noto-sans-bengali/NotoSansBengali-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../public/fonts/poppins/Poppins-Medium.ttf",
+      path: "../public/fonts/noto-sans-bengali/NotoSansBengali-Medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../public/fonts/poppins/Poppins-SemiBold.ttf",
+      path: "../public/fonts/noto-sans-bengali/NotoSansBengali-SemiBold.ttf",
       weight: "600",
       style: "italic",
     },
     {
-      path: "../public/fonts/poppins/Poppins-Bold.ttf",
+      path: "../public/fonts/noto-sans-bengali/NotoSansBengali-Bold.ttf",
       weight: "700",
       style: "normal",
     },
@@ -53,22 +58,18 @@ let theme = createTheme({
     mode: "light",
     text: {
       primary: "#707387", // Default font color (for most texts)
-      secondary: "#454655", // For secondary text (e.g., subtitles)
+      secondary: "#3d3d3d", // For secondary text (e.g., subtitles)
     },
     primary: {
-      50: "#ecf9ff",
-      100: "#d5efff",
-      light: "#074dc6",
-      main: "#0d47a1",
-      dark: "#0d2b5e",
+      light: "#27c064",
+      main: "#1cab55",
+      dark: "#187d41",
       contrastText: "#fff",
     },
     secondary: {
-      50: "#f7f7f8", //using bg color
-      100: "#ededf1", //using bg color
-      light: "#5a5c6f",
-      main: "#454655",
-      dark: "#3f404d",
+      light: "#454545",
+      main: "#3d3d3d",
+      dark: "#000000",
       contrastText: "#000",
     },
     error: {
@@ -98,49 +99,51 @@ let theme = createTheme({
     //experimental myself
     white: {
       light: "#ffffff",
-      main: "#efefef",
+      main: "#a3a3a3",
       dark: "#dcdcdc",
       contrastText: "#000",
     },
   },
   typography: {
-    fontFamily: [roboto.style.fontFamily, poppins.style.fontFamily].join(","),
+    fontFamily: [inter.style.fontFamily, notoSansBengali.style.fontFamily].join(
+      ","
+    ),
     htmlFontSize: 16,
     fontSize: 14,
     h1: {
       color: "#383842",
       fontSize: "2.5rem",
-      fontFamily: poppins.style.fontFamily,
+      fontFamily: inter.style.fontFamily,
       fontWeight: 500,
     },
     h2: {
       color: "#383842",
       fontSize: "2rem",
-      fontFamily: poppins.style.fontFamily,
+      fontFamily: inter.style.fontFamily,
       fontWeight: 500,
     },
     h3: {
       color: "#383842",
       fontSize: "1.75rem",
-      fontFamily: poppins.style.fontFamily,
+      fontFamily: inter.style.fontFamily,
       fontWeight: 500,
     },
     h4: {
       color: "#383842",
       fontSize: "1.5rem",
-      fontFamily: poppins.style.fontFamily,
+      fontFamily: inter.style.fontFamily,
       fontWeight: 500,
     },
     h5: {
       color: "#383842",
       fontSize: "1.25rem",
-      fontFamily: poppins.style.fontFamily,
+      fontFamily: inter.style.fontFamily,
       fontWeight: 500,
     },
     h6: {
       color: "#383842",
       fontSize: "1rem",
-      fontFamily: poppins.style.fontFamily,
+      fontFamily: inter.style.fontFamily,
       fontWeight: 500,
     },
   },
@@ -171,7 +174,7 @@ let theme = createTheme({
           textDecoration: "none",
           transition: "all linear 0.3s",
           "&:hover": {
-            color: "#0d47a1",
+            color: "#1cab55",
           },
         },
       },

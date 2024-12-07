@@ -1,0 +1,117 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "IELTSLiveBatch": {
+    "description": "Get the best IELTS preparation with direct guidance and feedback from the country's top IELTS instructors, all in one course. With this live course, learn hands-on techniques for Listening, Reading, Writing, and Speaking. Join our live batch now to achieve your desired IELTS score in just 12 weeks.",
+    "info": {
+      "courseDuration": "Course duration: 3 month",
+      "classTime": "Sat, Mon, Wed (6PM - 7:30PM)",
+      "enrollment": "Enrollment of the 10th batch is ongoing",
+      "seat": "Seat remaining: 100",
+      "students": "1st to 9th Batch: 1030 Students"
+    },
+    "countDown": {
+      "title": "Enrollment of the 10th Batch will end on:"
+    },
+    "instructors": {
+      "title": "Course instructors"
+    },
+    "routine": {
+      "title": "Class routine"
+    },
+    "freeItems": {
+      "title": "Free items with this products-"
+    },
+    "testimonials": {
+      "title": "Students opinion"
+    },
+    "faq": {
+      "title": "Frequently Ask Questions"
+    }
+  },
+  "Footer": {
+    "col1": {
+      "title": "Download Our Mobile App"
+    },
+    "col2": {
+      "title": "Company",
+      "items": [
+        {
+          "label": "Career / Recruitment",
+          "url": "/"
+        },
+        {
+          "label": "Join as a Teacher",
+          "url": "/"
+        },
+        {
+          "label": "Join as an Affiliate",
+          "url": "/"
+        },
+        {
+          "label": "Privacy policy",
+          "url": "/"
+        },
+        {
+          "label": "Refund policy",
+          "url": "/"
+        },
+        {
+          "label": "Terms & Conditions",
+          "url": "/"
+        }
+      ]
+    },
+    "col3": {
+      "title": "Others",
+      "items": [
+        {
+          "label": "Blog",
+          "url": "/"
+        },
+        {
+          "label": "Book Store",
+          "url": "/"
+        },
+        {
+          "label": "Free Notes & Guides",
+          "url": "/"
+        },
+        {
+          "label": "Job Preparation Courses",
+          "url": "/"
+        },
+        {
+          "label": "Verify Certificate",
+          "url": "/"
+        },
+        {
+          "label": "Free Download",
+          "url": "/"
+        }
+      ]
+    },
+    "col4": {
+      "title": "Keep up with us at",
+      "callUs": {
+        "label": "Call Us: 16910 (24x7)",
+        "url": "/"
+      },
+      "whatsapp": {
+        "label": "whatsapp: +8801896016252(24x7)",
+        "url": "/"
+      },
+      "outsideBD": {
+        "label": "Outside Bangladesh: +880 9610916910",
+        "url": "/"
+      },
+      "emailUs": {
+        "label": "Email Us: support@10minuteschool.com",
+        "url": "/"
+      }
+    },
+    "copyright": "2015 - 2024 Copyright © 10 Minute School. All rights reserved."
+  }
+}
