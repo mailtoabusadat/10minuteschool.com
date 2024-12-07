@@ -7,6 +7,7 @@ First, clone the project repository to your local machine:
 git clone https://github.com/mailtoabusadat/10minuteschool.com.git
 
 Install the required dependencies for the project using npm
+
 npm install
 
 Run the development server:
